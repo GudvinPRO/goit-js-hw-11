@@ -11,10 +11,10 @@ const list = document.querySelector('.list');
 const load = document.querySelector('.loading');
 form.addEventListener('submit', handleImages);
 
-function handleImages(e) {
-  e.preventDefault();
+function handleImages(event) {
+  event.preventDefault();
   load.classList.add('loader');
-  const input = e.target.elements.search.value.trim();
+  const input = event.target.elements.search.value.trim();
   if (input === '') {
     iziToast.error({
       backgroundColor: 'lightred',
