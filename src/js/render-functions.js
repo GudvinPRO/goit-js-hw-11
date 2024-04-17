@@ -43,7 +43,7 @@ export function renderImages(imagesArr) {
       }
     )
     .join('');
-    galleryList.insertAdjacentHTML(gallery);
+    galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
 //ТУТ ДОДАЙТЕ ДО ДОМ ДО КЛАСУ GALLERY ЧЕРЕЗ ІНСЕРТАДЖАЙСЕНШТМЛ
     lightbox.refresh();
 }
